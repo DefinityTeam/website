@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        * {
-            font-family: 'Helvetica';
-            color: white;
-        }
-
-        .box {
-            display: inline-block;border:1px solid white;margin-right: 5px;
-            padding:15px;
-            background-color: rgb(22, 22, 22);
-            transition: 1s;
-            width:500px;
-        }
-
-        .box:hover {
-            padding: 30px;
-        }
-    </style>
-    <title>Definity</title>
+    <title>Welcome | Definity</title>
+    <%= include('../partials/head', {host: host}); %>
 </head>
 <body style="background-color: rgb(43, 43, 43); text-align: center;" >
     <div>
