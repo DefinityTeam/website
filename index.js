@@ -51,7 +51,7 @@ app.get('/join/:job', (req, res) => {
         .replace('[[[WHAT_YOU_WILL_BE_DOING]]]', jobData[req.params.job].doing)
         .replace('[[[WHAT_TO_EXPECT]]]', jobData[req.params.job].expect)
         .replace('[[[ADDITIONAL_REQUIREMENTS]]]', jobData[req.params.job].additonal ? jobData[req.params.job].additonal : '');
-    res.send(file);
+    res.status(200).send(file);
 });
 app.get('*', (req, res) => {
     res.status(200).render(`.${req.path}`, function (err, data) {
