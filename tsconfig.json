@@ -1,7 +1,9 @@
 {
+  "include": ["./**/*"],
   "compilerOptions": {
+    "module": "commonjs",
     "target": "esnext",
-    "outDir": "dist",
+    "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
