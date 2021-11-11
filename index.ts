@@ -56,7 +56,7 @@ app.get('/join/:job', (req, res) => {
     .replace('[[[WHAT_TO_EXPECT]]]', jobData[req.params.job].expect)
     .replace('[[[ADDITIONAL_REQUIREMENTS]]]', jobData[req.params.job].additonal ? jobData[req.params.job].additonal : '');
     
-    res.send(file);
+    res.status(200).send(file);
     
 });
 
