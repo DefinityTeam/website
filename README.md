@@ -1,12 +1,21 @@
-\[WIP readme]
 # Definity Website
+## Introduction
+This repository hosts the Definity website. It's made entirely in [TypeScript](https://typescriptlang.org)/JavaScript using [Express](https://expressjs.com) and [EJS](https://ejs.co), to make hosting it yourself easier.
+
+By default, it runs on port 80 (as is standard), but you can modify it on the first line of `src/index.ts` / `dist/index.js`.
+
 ## Starting
 ```
 $ > git clone https://github.com/DefinityTeam/website
 $ > cd website
 $ > npm install
-$ > node run
+$ > npm run start
 ```
+
+## Contributing
+When contributing to the main/parent repository, it is recommended to use `npm run watch`. When you make changes to the directory, or any `.ts`/`.json` file, `nodemon` will automatically restart the server.
+
+Once you've finished your changes, ^C and `rm -rf index.js index.js.map && npm run build`. After that, you're good to go.
 
 ## License
 Copyright (C) 2021 Definity
