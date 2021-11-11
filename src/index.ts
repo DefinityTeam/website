@@ -51,8 +51,9 @@ app.get('/join/*', (req, res) => {
 
     //console.log(file);
 
-
-    res.send(file);
+    res
+    .status(200)
+    .send(file);
     
 });
 
