@@ -2,10 +2,10 @@
 # Definity Website
 ## Starting
 ```
-$ > git clone https://source.definityteam.com/website 
+$ > git clone https://github.com/DefinityTeam/website
 $ > cd website
 $ > npm install
-$ > ts-node ./src/index.ts
+$ > node run
 ```
 
 ## License
