@@ -63,7 +63,7 @@ app.get('/join/:job', (req, res) => {
 app.get('*', (req, res) => {
     res.status(200).render(`.${req.path}`, function (err: string[], data: string[]) {
         if(err) {
-            res.status(404).render('404'); 
+            res.status(404).send('<center><h1>404 Not Found</h1><hr><p>definity-website</p></center>'); 
         }
         else res.send(data)
     });
@@ -71,7 +71,7 @@ app.get('*', (req, res) => {
 });
 
 app.all('*', (req, res) => {
-    res.status(405).send('Sorry, you can\'t access our website with that method.\n\nPlease use GET to access our website, and it\'s information.\n\nWhat were you even trying to do, anyways? Come work with us and help us out: https://definityteam.com/join\n');
+    res.status(405).send('<center><h1>405 Method Not Allowed</h1><hr><p>Sorry, you can\'t access our website with that method.\n\nPlease use GET to access our website, and it\'s information.\n\nWhat were you even trying to do, anyways? Come work with us and help us out: https://definityteam.com/join\ndefinity-website</p></center>');
     return
 });
 
