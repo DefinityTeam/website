@@ -8,7 +8,7 @@ By default, it runs on port 80 (as is standard), but you can modify it on the fi
 ```
 $ > git clone https://github.com/DefinityTeam/website
 $ > cd website
-$ > npm install
+$ > npm ci
 $ > npm run start
 ```
 
