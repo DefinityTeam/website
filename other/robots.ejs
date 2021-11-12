@@ -1,0 +1,5 @@
+# Allow crawlers to see entire site
+User-Agent: *
+Disallow:
+Sitemap: <%- host %>/sitemap.xml
+<% // This *would* be a robots.txt file in static/, but the sitemap means we're using EJS for this. %>
