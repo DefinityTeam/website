@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: Definity website
+message: >-
+  If you use this code, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - name: Definity
+repository-code: 'https://github.com/DefinityTeam/website'
+url: 'https://definityteam.com'
+repository: 'https://github.com/DefinityTeam/website'
+abstract: >-
+  This is the code for the Definity website.
+license: AGPL-3.0-or-later
