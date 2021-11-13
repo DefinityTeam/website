@@ -24,7 +24,7 @@ $ > npm run build
 ## Contributing
 When contributing to the main/parent repository, it is recommended to use `npm run watch`. When you make changes to the directory, or any `.ts`/`.json` file, `nodemon` will automatically restart the server.
 
-Once you've finished your changes, ^C and `rm -rf index.js index.js.map && npm run build`. After that, you're good to go.
+Once you've finished your changes, ^C and `npm run build`. After that, you're good to go.
 
 ## License
 Copyright (C) 2021 Definity
