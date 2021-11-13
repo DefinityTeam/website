@@ -10,7 +10,7 @@ let app = express();
 
 let jobData = require(path.join(path.resolve('.'), 'jobinfo.json'));
 
-app.set('views', path.join(__dirname, 'views'))
+app.set('views', path.join(path.resolve('.'), 'views'))
 app.set('view engine', 'ejs');
 
 i18n.configure({
@@ -57,7 +57,7 @@ app.get('/sitemap.xml', (req,res) => {
 })
 
 app.get('/license', (req, res) => {
-    res.status(200).type('text/plain').sendFile(__dirname + '/LICENSE');
+    res.status(200).type('text/plain').sendFile(path.resolve('.') + '/LICENSE');
 })
 app.get('/join/:job', (req, res) => {
     let file: String = fs.readFileSync(path.join(path.resolve('.'), 'job.html'), 'utf-8');
@@ -95,9 +95,12 @@ app.all('*', (req, res) => {
 switch (JSON.parse(JSON.stringify(yargs(hideBin(process.argv)).argv)).prod) {
     case true:
         app.listen(80, () => { console.log(`Online on HTTP, root directory "${path.resolve('.')}"`) });
+
+        // This will be changed to Let's Encrypt when the time comes for this to be deployed
+        // In the meantime, localhost.
         const server = https.createServer({
-            key: fs.readFileSync(`${__dirname}/localhost-key.pem`, 'utf8'),
-            cert: fs.readFileSync(`${__dirname}/localhost.pem`, 'utf8')
+            key: fs.readFileSync(`${path.resolve('.')}/localhost-key.pem`, 'utf8'),
+            cert: fs.readFileSync(`${path.resolve('.')}/localhost.pem`, 'utf8')
         }, app);
         server.listen(443, () => { console.log(`Online on HTTPS, root directory "${path.resolve('.')}"`) });
         break;

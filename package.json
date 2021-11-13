@@ -4,8 +4,7 @@
     "start": "node index.js",
     "ts-start": "ts-node index.ts",
     "watch": "nodemon index.ts",
-    "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "build": "rm -rf index.js index.js.map && tsc --build"
   },
   "repository": {
     "type": "git",
