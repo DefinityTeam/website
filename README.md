@@ -4,13 +4,22 @@ This repository hosts the Definity website. It's made entirely in [TypeScript](h
 
 By default, it runs on port 80 (as is standard), but you can modify it on the first line of `src/index.ts` / `dist/index.js`.
 
-## Starting
+## Running
+Open a terminal, and setup if you haven't done `git clone` yet:
 ```
 $ > git clone https://github.com/DefinityTeam/website
 $ > cd website
-$ > npm ci
-$ > npm run start
+$ > npm ci --only=production
 ```
+Starting in development: `npm run start`</br>
+Starting in production: `npm run start -- --prod`
+
+## Building
+```
+$ > npm ci
+$ > npm run build
+```
+(Yes, it's that easy.)
 
 ## Contributing
 When contributing to the main/parent repository, it is recommended to use `npm run watch`. When you make changes to the directory, or any `.ts`/`.json` file, `nodemon` will automatically restart the server.
