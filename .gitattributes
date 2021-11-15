@@ -1,0 +1,3 @@
+*.ejs -linguist-detectable
+*.ejs linguist-detectable=false
+*.ejs linguist-documentation=false
