@@ -1,0 +1,3 @@
+[submodule "static/dlib"]
+	path = static/dlib
+	url = https://github.com/DefinityTeam/dlib

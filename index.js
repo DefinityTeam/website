@@ -53,15 +53,14 @@ app.use((req, res, next) => {
     res.removeHeader('X-Powered-By');
     next();
 });
+
 app.get('/robots.txt', (req, res) => {
     res.status(200).type('text/plain').render('../other/robots', { host: app.get('host') });
 });
 app.get('/sitemap.xml', (req, res) => {
     res.status(200).type('application/xml').render('../other/sitemap', { host: app.get('host') });
 });
-app.get('/license', (req, res) => {
-    res.status(200).type('text/plain').sendFile(__dirname + '/LICENSE');
-});
+
 app.get('/join/:job', (req, res) => {
     let file = fs_1.default.readFileSync(path_1.default.join(path_1.default.resolve('.'), 'job.html'), 'utf-8');
     let url = req.path.toString();

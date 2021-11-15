@@ -1,136 +1,144 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
     <head>
         <title>Volunteer | Definity</title>
 <%- include('../partials/head', {host: host}); %>
-            @font-face {
-                font-family: 'Fjalla One';
-                font-style: normal;
-                font-weight: 400;
-                font-display: swap;
-                src: url('/font/fjalla-latin-ext.woff2') format('woff2');
-                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-            }
-            @font-face {
-                font-family: 'Fjalla One';
-                font-style: normal;
-                font-weight: 400;
-                font-display: swap;
-                src: url('/font/fjalla-latin.woff2') format('woff2');
-                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-            }
-            .filter {
-                font-family: 'Helvetica';
-                border-radius: 28px;
-                font-size: 20px;
-                margin-right: 8px;
-                margin-left: 8px;
-                padding: 16px 32px;
-                box-shadow: 0 1px 1px rgba(0,0,0,.1);
-                border: 1px solid rgb(104, 104, 104);
-                background-color: white;
-                text-decoration: none;
+            * {
                 color: black;
-                transition: 0.5s;
             }
+
+            .background-color {
+                background-color: rgb(255,255,255)
+            }
+
             .box {
-                display: inline-block;border:1px solid black;margin-right: 5px;
+                display:inline-block;
+                border:1px solid black;
+                margin-right:5px;
                 padding:15px;
-                    background-color: rgb(255, 255, 255);
-                    transition: 1s;
-                    width:500px;
-                    color: black;
-                    margin-bottom: 10px;
-            }      
-            .filter:hover {
-                color: blue;
-            }      
+                background-color:#ffffff;
+                transition: 1s;
+                width:500px;
+                color:#000000;
+                margin-bottom: 10px;
+            }
+
             * {
                 font-family: 'Helvetica';
-                    text-decoration: none;
-            }
-            .filter a {
                 text-decoration: none;
+            }
+
+            #whats-it-like {
+                background-color: rgb(0,0,0);
+                color:white;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .background-color {
+                    background-color: rgb(0,0,0);
+                }
+
+                * {
+                    color:white;
+                }
+
+                .box {
+                    background-color:rgb(0,0,0);
+                    border: 1px solid white;
+                    color:#ffffff;
+                }
+
+                .whats-it-like {
+                    background-color: rgb(255,255,255);
+                    color:black;
+                }
             }
         </style>
     </head>
     <body style="background: linear-gradient(90deg, rgba(66,231,237,1) 0%, rgba(31,53,143,1) 100%);text-align: center;margin:0;">
-        <%- include('../partials/navbar'); %>
-        <h1 style="font-family: Fjalla One;font-size: 350%;color:white;">VOLUNTEER AT DEFINITY</h1>
-        <span style="font-weight: lighter;font-size:150%">At Definity, we create <span style="font-weight: 1000 !important">things that respect humanity</span> and <span style="font-weight: 1000 !important">we'd love for you to join</span>.<br>You can volunteer to join us in multiple positions in many categories.</span>
+<%- include('../partials/navbar'); %>
+        <h1 style="font-family:Changa;font-size: 350%;color:white">VOLUNTEER AT DEFINITY</h1>
+        <span style="font-weight: lighter;font-size:150%;color:white">At Definity, we make things that <span style="font-weight: 1000 !important;color:white">respect humanity</span> and <span style="font-weight: 1000 !important;color:white">we'd love for you to join</span>.<br>You can volunteer to join us in multiple positions in many categories.</span>
             <br><br>
-        <div style="background-color: rgb(255,255,255);">
+        <div class="background-color">
             <br>
-            <span style="font-family: Fjalla One;font-size: 300%;">POSITIONS AVAILABLE</span> <br>
-            <span style="font-family: Fjalla One;font-size: 200%;">Software and Servers</span> <br> <br>
+            <span style="font-family:Changa;font-size: 300%;">POSITIONS AVAILABLE</span> <br>
+            <span style="font-family:Changa;font-size: 200%;">Software and Servers</span> <br> <br>
         <div style="display:inline;">
-            <a href="join/software-engineer">
+            <a href="/join/software-engineer">
             <div class="box">
                 <h3>Software Engineer</h3>
                 <span>Programming the products for the people.</span>
+                <br><br>
             </div>
             </a>
-            <a href="join/server-management">
+            <a href="/join/server-management">
             <div class="box">
                 <h3>Server Management</h3>
                 <span>Optimizing our servers, helping with location expansion and more.</span>
+                <br><br>
             </div>
             </a>
         </div> <br> <br>
-        <span style="font-family: Fjalla One;font-size: 200%;">Product and Public</span> <br> <br>
+        <span style="font-family:Changa;font-size: 200%;">Product and Public</span> <br> <br>
         <div style="display:inline;">
-            <a href="join/marketing">
+            <a href="/join/marketing">
             <div class="box">
                 <h3>Marketing</h3>
                 <span>Help us with advertisements and deciding what's best.</span>
+                <br><br>
             </div>
             </a>
-            <a href="join/social-media">
+            <a href="/join/social-media">
             <div class="box">
                 <h3>Social Media Coordinator</h3>
                 <span>Decide what we post and interact with the people.</span>
+                <br><br>
             </div>
             </a>
-            <a href="join/networking-manager">
+            <a href="/join/networking-manager">
             <div class="box">
                 <h3>Networking Manager</h3>
                 <span>Help us connect with other companies and create partnerships.</span>
+                <br><br>
             </div>
         </a>
         </div> <br> <br>
-        <span style="font-family: Fjalla One;font-size: 200%;">Design</span> <br> <br>
-        <a href="join/graphic-designer">
+        <span style="font-family:Changa;font-size: 200%;">Design</span> <br> <br>
+        <a href="/join/graphic-designer">
         <div style="display:inline;">
             <div class="box">
                 <h3>Graphic Designer</h3>
                 <span>Design product logos and branding.</span>
+                <br><br>
             </div>
         </a>
         </div> <br> <br>
-        <span style="font-family: Fjalla One;font-size: 200%;">In the (remote) office</span> <br> <br>
+        <span style="font-family:Changa;font-size: 200%;">In the (remote) office</span> <br> <br>
         <div style="display:inline;">
-            <a href="join/human-resources">
+            <a href="/join/human-resources">
             <div class="box">
                 <h3>Human Resources</h3>
                 <span>Oversee what's going on and handle people issues.</span>
+                <br><br>
             </div>
             </a>
-            <a href="join/employment-manager">
+            <a href="/join/employment-manager">
             <div class="box">
                 <h3>Employment Manager</h3>
                 <span>Help us select who to interview and help us decide positions.</span>
+                <br><br>
             </div>
             </a>
         </div> <br> <br>
             <br>
-                <div style="background-color: rgb(58, 58, 58); color:white;">
-                    <br>
-                    <span style="font-family: Fjalla One;font-size: 300%;">WHAT'S IT LIKE?</span> <br> <br>
-                    <span style="font-weight: lighter;font-size:100%">Here at Definity, one of our four aims is to <span style="font-weight: 1000 !important">create the best possible work experience for our employees/volunteers</span>.<br>You work your own hours, take breaks whenever and you are encouraged to speak out, whether internally or publicly, about any problems you have with us.</span>
-                    <br><br>
-                </div>
+        <div class="whats-it-like">
+            <br>
+            <span style="font-family:Changa;font-size: 300%;" class="whats-it-like">WHAT'S IT LIKE?</span> <br> <br>
+            <span style="font-weight: lighter;font-size:100%" class="whats-it-like">Here at Definity, one of our four aims is to <span style="font-weight: 1000 !important" class="whats-it-like">create the best possible work experience for our employees/volunteers</span>.<br>You work your own hours, take breaks whenever and you are encouraged to speak out, whether internally or publicly, about any problems you have with us.</span>
+            <br><br>
+        </div>
         </div>
         <footer><%- include('../partials/footer'); %></footer>
-
     </body>
 </html>

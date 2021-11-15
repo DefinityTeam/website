@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<%- include('../partials/head', {host: host}); %>
+            * {
+                font-family: 'Helvetica';
+                color: black;
+            }
+            ul {
+                list-style-position: inside;
+            }
+            @media (prefers-color-scheme: dark) {
+                * {
+                    color:white;
+                }
+            }
+            .background-color {
+                background-color: rgb(255,255,255)
+            }
+            @media (prefers-color-scheme: dark) {
+                .background-color {
+                    background-color: rgb(50,50,50);
+                }
+            } /* hello kitter */
+        </style>
+    </head>
+
+    <body style="background: linear-gradient(90deg, rgba(66,231,237,1) 0%, rgba(31,53,143,1) 100%);text-align: center;margin:0;">
+<%- include('../partials/navbar', {host: host}); %>
+        <h1 style="font-size: 350%;color:white;font-family:Changa"><%- jobData.name.toUpperCase() %></h1>
+        <div class="background-color">
+            <br>
+            <span style="font-size: 300%;">Information</span> <br>
+            <span style="font-size: 200%;">What we want</span> <br> <br>
+            <ul>
+            <% jobData.want.forEach(function(want) { %>
+                <li style="font-size:150%"><%- want.bullet %></li>
+                <% if (want.extra) { %>
+                    <span><%- want.extra %></span>
+                <% } %>
+            <% }); %>
+            </ul>
+            
+            <br>
+
+            <span style="font-size: 200%;">What you'll be doing</span> <br> <br>
+            <% jobData.doing.forEach(function(bullet) { %>
+                <li><%- bullet %></li>
+            <% }); %>
+            </ul>
+
+            <br><br>
+
+            <span style="font-size: 200%;">What to expect</span> <br> <br>
+            <% jobData.expect.forEach(function(expect) { %>
+                <li style="font-size:150%"><%- expect.bullet %></li>
+                <% if (expect.extra) { %>
+                    <span><%- expect.extra %></span>
+                <% } %>
+            <% }); %>
+
+            <span style="font-size: 200%;">How do I apply?</span> <br> <br>
+            <span style="font-size:150%;">Contact us directly at <a href="mailto:employment@definityteam.com">employment@definityteam.com</a> with your CV and somewhere to contact you via call.</span> <br>
+            <span>Discord tag etc. - this is so we can interview you.</span><%- jobData.additonal ? jobData.additonal : '' %>
+            
+            <br> <br> <br> <br>
+        </div>
+        <footer><%- include('../partials/footer'); %></footer>
+    </body>
+</html>
