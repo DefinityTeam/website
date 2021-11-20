@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/definity
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://definityteam.com
+  * I am definity (https://keybase.io/definity) on keybase.
+  * I have a public key ASC3LAexLN0heWX_GWaIyUo16xSPdug-3HolBNFYZ-EwQAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b72c07b12cdd217965ff196688c94a35eb148f76e83edc7a2504d15867e130400a",
+      "host": "keybase.io",
+      "kid": "0120b72c07b12cdd217965ff196688c94a35eb148f76e83edc7a2504d15867e130400a",
+      "uid": "13d849a557f617634ce087efd1764719",
+      "username": "definity"
+    },
+    "merkle_root": {
+      "ctime": 1637272415,
+      "hash": "91e2bd184cf3794a561e166e61795fed8757c430886ae62f044a5ced4f106f6721031a09387d0d8a347fa8734cc52fb812d4c124732df1ac58d486bb2a5ca8b3",
+      "hash_meta": "fa1f58cb9e39902cc6be9b5554ea23262390f37ba93ed7063bb7cf728f9a6124",
+      "seqno": 21255626
+    },
+    "service": {
+      "entropy": "r+YSsKA7u5DBExquTuNNXX12",
+      "hostname": "definityteam.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1637272454,
+  "expire_in": 504576000,
+  "prev": "60dfdf3a724c9e0d26b6351fb5a5c7caa59235c7f58b5034af7c90b4e8af458e",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtywHsSzdIXll/xlmiMlKNesUj3boPtx6JQTRWGfhMEAKp3BheWxvYWTESpcCB8QgYN/fOnJMng0mtjUftaXHyqWSNcf1i1A0r3yQtOivRY7EIDjrp60ymR/CTSDTHhUXqdt+Vn7SfinX+ME4X3vpITTGAgHCo3NpZ8RAAxtz6vzZfCN3ErPbkh5AitutGw/xuo4kiRxQT+RycLSk1VypjQg+beIcmeGH1q2tzdZ76kPVsSlIyCphydYNC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAWCewcLD7ot8n4yAdADVydO0GNEVzYRpfdE34Ybe+alo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/definity
+
+==================================================================
