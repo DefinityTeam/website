@@ -4,6 +4,7 @@
 <head>
     <title>Welcome | Definity</title>
     <%- include('../partials/head', {host: host}); %>
+    <style>
         * {
         font-family: 'Helvetica';
         color:black;
@@ -68,19 +69,17 @@
         </style>
 </head>
 
-<body
-    style="text-align: center;background: linear-gradient(90deg, rgba(66,231,237,1) 0%, rgba(31,53,143,1) 100%);margin:0;">
+<body style="text-align: center;background: linear-gradient(90deg, rgba(66,231,237,1) 0%, rgba(31,53,143,1) 100%);margin:0;">
     <%- include('../partials/navbar'); %>
         <div>
             <span style="font-size: 300%;font-family:Changa;">DEFINITY</span><br>
             <span style="font-size: 100%;">We make things that respect humanity.</span>
         </div>
         <br>
-        <div class="background-color" style="background-color: #1c1b1b;"> <br>
+<!--        <div class="background-color" style="background-color: #1c1b1b;"> <br>
             <span style="font-size:200%;"><a href="/join">Looking to join us?</a></span>
             <br><br>
-        </div>
-
+        </div> -->
         <div class="background-color"> <br>
             <span style="font-size:200%;">The Things We've Made</span> <br><br>
             <div class="box" id="soon">
@@ -88,11 +87,6 @@
                 <p>What'd you expect?</p>
             </div>
             <br><br>
-        </div>
-
-        <div class="background-color" style="background-color: #1e1e1e;"> <br>
-            <span>put something here idk</span>
-            <br> <br>
         </div>
         <footer>
             <%- include('../partials/footer'); %>
